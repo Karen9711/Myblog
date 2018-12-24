@@ -42,3 +42,26 @@ function dealFeature() {
   });
 }
 dealFeature();
+
+function toTop() {
+  $('#toTop p').click(function () {
+    $("html, body").animate({scrollTop: 0}, 1000);
+  });
+}
+
+toTop();
+
+function jumpTo(){
+  $('.header .navbar-nav span').click(function (e) {
+    e.preventDefault();
+    var spanId = this.id;
+    // console.log(spanId);
+    var divId = spanId.split('-')[0];
+    var position = $('#' + divId).position();
+    $('html,body').animate({
+      scrollTop:position.top,
+    },1000);
+  });
+}
+
+jumpTo();
