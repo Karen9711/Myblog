@@ -15,14 +15,15 @@
 
 </head>
 <body>
-  <div class="header navbar navbar-expand-lg navbar-light clearfix">
+  <div class="header navbar navbar-expand-lg navbar-light clearfix" id='header'>
     <a href="#" class="navbar-brand">Myblog</a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link" href="#">Disabled</a>
+        <span id='header-link' class="nav-item nav-link active" href="#">Home</span>
+        <span id='feature-link' class="nav-item nav-link" href="#">Feature</span>
+        <span id='category-link' class="nav-item nav-link" href="">Category</span>
+        <span id='contact-link' class="nav-item nav-link" href="#">Contact</span>
+        <span id='footer-link' class="nav-item nav-link" href="#">about</span>
       </div>
     </div>
   </div>
@@ -60,13 +61,13 @@
       find yourself
     </div>
 
-    <div class="feature jarallax">
+    <div class="feature jarallax" id='feature'>
       <div class="text-left">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     </div>
 
-    <div class="category">
+    <div class="category" id="category">
       <div class="item-wrap">
         <a href="#" class="item">
           <div class="icon" style="background-image:url('img/icon/cash.png')">
@@ -136,7 +137,7 @@
       </div>
     </div>
 
-    <div class="contact clearfix">
+    <div class="contact clearfix" id='contact'>
       <div class="contact-message">
         <form  method="get" class="leave-message" id="message">
           <label for="message">leave a message for me</label>
@@ -170,12 +171,62 @@
         </a>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-wrap">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+    <div class="footer" id='footer'>
+      <div class="footer-wrap container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="content">
+              <ul>
+                <li class="title">使用框架</li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">Jquery</a></li>
+                <li><a href="">jarallax</a></li>
+                <li><a href="">responsiveslides.js</a></li>
+                <li><a href="">Vue.js</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <ul>
+                <li class="title">近期书单</li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">Jquery</a></li>
+                <li><a href="">jarallax</a></li>
+                <li><a href="">responsiveslides.js</a></li>
+                <li><a href="">Vue.js</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <ul>
+                <li class="title">即将上架</li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">Jquery</a></li>
+                <li><a href="">jarallax</a></li>
+                <li><a href="">responsiveslides.js</a></li>
+                <li><a href="">Vue.js</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <ul>
+                <li class="title">一起学习</li>
+                <li><a href="">Jquery</a></li>
+                <li><a href="">jarallax</a></li>
+                <li><a href="">responsiveslides.js</a></li>
+                <li><a href="">Vue.js</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+      <div id="toTop">
+        <p>back to top</p>
+      </div>
+
     </div>
   </div>
 
