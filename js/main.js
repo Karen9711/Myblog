@@ -1,9 +1,19 @@
+
+// var headertop = $('.header').position().top;
+// console.log(headertop);
+// var htop = $('.header').height();
+// console.log(htop);
+
+
 function showImage(){
   var h = window.innerHeight;
+  var headerHeight = $('.header').height();
   $('#showImg .headerImg').css({
     // width:w,
     width:'100%',
     height:h,
+    position:'relative',
+    top:headerHeight,
   })
   $('#showImg').responsiveSlides({
     auto:true,
@@ -17,20 +27,20 @@ function showImage(){
 
     }
   });
-  console.log(h);
+  // console.log(h);
 }
 showImage();
 
 function dealHeader(){
-  var position = $('.header').position();
-  var top = position.bottom;
+  var headerHeight = $('.header').height();
   var h = $('.main').height() + 'px';
   $('#coverText').css({
     position:'absolute',
-    top:top,
+    top:headerHeight,
     height:h,
   });
-  console.log(h);
+  // console.log(h);
+  // console.log(top);
 }
 dealHeader();
 

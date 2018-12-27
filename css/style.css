@@ -4,6 +4,14 @@
   box-sizing: border-box;
 
 }
+.header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+}
 .header a
 {
   /* color: #fff !important; */
@@ -73,23 +81,35 @@
   background-size: 100%;
   width: 100%;
   height: 30em;
-}
-.feature .text-left
-{
-  height: 20em;
-  font-size: 15px;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  color: #fff;
 }
-.feature .text-left
+.feature .content-left
 {
-  width: 60%;
+  /* padding-top:5em; */
+  padding-bottom: 3em;
+
+}
+.feature .content-left h3
+{
+  color: #fff;
+  font-size: 40px;
+}
+.feature .content-left .cando-list
+{
+  list-style: none;
+  padding: 0;
+
 }
 
+.feature .content-left .cando-list .item
+{
+  color: #fff;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.8em;
+}
 .category
 {
   width: 100%;
