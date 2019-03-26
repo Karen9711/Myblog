@@ -7,11 +7,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style_1.css">
+
 </head>
 <body>
   <div class="header">
     <ul class='nav'>
-      <li class='item'><a href="">home</a></li>
+      <li class='item'><a href="#">home</a></li>
       <li class='item'><a href="">category</a></li>
       <li class='item'><a href="">contact</a></li>
       <li class='item'><a href="">about</a></li>
@@ -90,7 +91,8 @@
     </div>
 
 
-    <div class="gap">
+    <div class="gap jarallax">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
 
 
@@ -99,7 +101,7 @@
         <form  method="get" class="leave-message" id="message">
           <label for="message">leave a message for me</label>
           <textarea class="text" name="message" cols="30" rows="10" form="message" wrap="hard" placeholder="Write something here..."></textarea>
-          <input class="button" type="submit" name="submit" value="提交">
+          <input class="button" type="submit" name="submit" value="submit">
         </form>
       </div>
 
@@ -123,10 +125,61 @@
     </div>
 
     <div class="about">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="about-wrap">
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">使用框架</li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">近期书单</li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">即将上架</li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">一起学习</li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
     </div>
 
 
   </div>
+
+
+<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="js/jarallax/jarallax.js" charset="utf-8"></script>
+<script src="js/main_1.js" charset="utf-8"></script>
+<script type="text/javascript">
+$('.jarallax').jarallax({
+  speed: 0.5,
+  imgHeight: 768,
+  imgWidth: '100%',
+});
+</script>
 </body>
 </html>
