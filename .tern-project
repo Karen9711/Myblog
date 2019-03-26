@@ -15,6 +15,18 @@
       "load": "",
       "modules": ""
     },
-    "es_modules": {}
+    "es_modules": {},
+    "modules": {
+      "dontLoad": "",
+      "load": "",
+      "modules": ""
+    },
+    "commonjs": {},
+    "requirejs": {
+      "baseURL": "",
+      "paths": "",
+      "override": ""
+    },
+    "angular": {}
   }
 }
