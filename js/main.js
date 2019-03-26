@@ -48,7 +48,7 @@ function dealFeature() {
   $('.jarallax').jarallax({
   speed: 0.5,
   imgWidth: 1366,
-  imgHeight: 768
+  imgHeight: 768,
   });
 }
 dealFeature();
@@ -75,3 +75,9 @@ function jumpTo(){
 }
 
 jumpTo();
+
+$('.gap .jarallax').jarallax({
+  speed: 0.5,
+  imgHeight: 768,
+  imgWidth: 1366;
+});
