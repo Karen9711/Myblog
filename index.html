@@ -1,90 +1,32 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My blog</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/jarallax.css">
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style_1.css">
 
 </head>
 <body>
-  <div class="header navbar navbar-expand-lg navbar-light bg-light clearfix" id='header'>
-    <a href="#" class="navbar-brand">Myblog</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <span id='header-link' class="nav-item nav-link active" href="#">Home</span>
-        <span id='feature-link' class="nav-item nav-link" href="#">Feature</span>
-        <span id='category-link' class="nav-item nav-link" href="#">Category</span>
-        <span id='contact-link' class="nav-item nav-link" href="#">Contact</span>
-        <span id='footer-link' class="nav-item nav-link" href="#">about</span>
-        <span id='login-link' class="nav-item nav-link" href="#">login</span>
-        <!-- 弹出登录框——思路1——layer.js -->
-        <!-- 思路2——异步传输？ajax -->
-        <!-- 思路3——jQuery -->
-      </div>
-    </div>
+  <div class="header">
+    <ul class='nav'>
+      <li class='item'><a href="#">home</a></li>
+      <li class='item'><a href="">category</a></li>
+      <li class='item'><a href="">contact</a></li>
+      <li class='item'><a href="">about</a></li>
+      <li class='item'><a href="">login</a></li>
+    </ul>
   </div>
 
-  <div class="wrap">
-    <div id="coverText">
-        <div class="title">
-        find  yourself
-        </div>
-    </div>
-    <div id = 'login'>
-      <form action="#" method="post">
-        <input type="text" name="username" value="">
-        <input type="password" name="password" value="">
-      </form>
-    </div>
-    <div class="main">
-      <ul class="rslides clearfix" id='showImg'>
-
-        <li class="item">
-          <div class="headerImg" style="background-image:url('img/firework.jpg');">
-          </div>
-        </li>
-        <li class="item">
-          <div class="headerImg" style="background-image:url('img/forest.jpg');">
-          </div>
-        </li>
-        <li class="item">
-          <div class="headerImg" style="background-image:url('img/sunshine.jpg');">
-          </div>
-        </li>
-        <li class="item">
-          <div class="headerImg" style="background-image:url('img/cat1.jpg');">
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="mainPhase">
-      find yourself
-    </div>
-
-    <div class="feature jarallax" id='feature'>
-      <div class="content-left">
-        <h3>what you can do here</h3>
-        <div class="text">
-          <ul class="cando-list">
-            <li class="item">我的账单--记录你的每一笔收入与花销٩(๑>◡<๑)۶ </li>
-            <li class="item">我的灵感--每一个瞬间都可能会创造无限价值！</li>
-            <li class="item">我的成就--小小的成就会带来大大的喜悦！</li>
-            <li class="item">我的娱乐--最近有什么好看的剧？搞笑的综艺？欲罢不能的书？</li>
-            <li class="item">我的书单--读一本好书，好好读书</li>
-            <li class="item">我的菜单--来啊！有什么好吃的啊！告诉我啊！(〃'▽'〃)</li>
-          </ul>
-        </div>
+  <div class="content">
+    <div class="cover">
+      <div class="text">
+        to be a better self<br/>
+        and to enjoy life
       </div>
-
     </div>
-
     <div class="category" id="category">
       <div class="item-wrap">
         <a href="#" class="item">
@@ -148,110 +90,96 @@
       </div>
     </div>
 
+
     <div class="gap jarallax">
-      <div class="text-left">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
 
-    <div class="contact clearfix" id='contact'>
+
+    <div class="contact">
       <div class="contact-message">
         <form  method="get" class="leave-message" id="message">
           <label for="message">leave a message for me</label>
-          <textarea class="form-control" name="message" cols="30" rows="10" form="message" wrap="hard" placeholder="Write something here..."></textarea>
-          <input class="btn btn-light float-right" type="submit" name="submit" value="提交">
+          <textarea class="text" name="message" cols="30" rows="10" form="message" wrap="hard" placeholder="Write something here..."></textarea>
+          <input class="button" type="submit" name="submit" value="submit">
         </form>
       </div>
 
-
       <div class="contact-way">
         <a class="links" href="#" class="email">
-          <div class="icon" style="background-image:url('img/icon/gmail.png')">
-          </div>
-          <div class="title">
+          <div class="title" style="background-image:url('img/icon/gmail.png')">
             bearbear199711@qq.com
           </div>
         </a>
         <a class="links" href="#" class="facebook">
-          <div class="icon" style="background-image:url('img/icon/facebook.png')">
-          </div>
-          <div class="title">
+          <div class="title" style="background-image:url('img/icon/facebook.png')">
             myfacebook
           </div>
         </a>
         <a class="links" href="#" class="sina" >
-          <div class="icon" style="background-image:url('img/icon/weibo.png')">
-          </div>
-          <div class="title">
+          <div class="title" style="background-image:url('img/icon/weibo.png')">
             mysina
           </div>
         </a>
       </div>
     </div>
-    <div class="footer" id='footer'>
-      <div class="footer-wrap container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="content">
-              <ul>
-                <li class="title">使用框架</li>
-                <li><a href="">Bootstrap</a></li>
-                <li><a href="">Jquery</a></li>
-                <li><a href="">jarallax</a></li>
-                <li><a href="">responsiveslides.js</a></li>
-                <li><a href="">Vue.js</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="content">
-              <ul>
-                <li class="title">近期书单</li>
-                <li><a href="">Bootstrap</a></li>
-                <li><a href="">Jquery</a></li>
-                <li><a href="">jarallax</a></li>
-                <li><a href="">responsiveslides.js</a></li>
-                <li><a href="">Vue.js</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="content">
-              <ul>
-                <li class="title">即将上架</li>
-                <li><a href="">Bootstrap</a></li>
-                <li><a href="">Jquery</a></li>
-                <li><a href="">jarallax</a></li>
-                <li><a href="">responsiveslides.js</a></li>
-                <li><a href="">Vue.js</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="content">
-              <ul>
-                <li class="title">一起学习</li>
-                <li><a href="">Jquery</a></li>
-                <li><a href="">jarallax</a></li>
-                <li><a href="">responsiveslides.js</a></li>
-                <li><a href="">Vue.js</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="toTop">
-        <p>back to top</p>
-      </div>
 
+    <div class="about">
+      <div class="about-wrap">
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">使用框架</li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">近期书单</li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">即将上架</li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class='content'>
+            <li class="title">一起学习</li>
+            <li><a href="">Jquery</a></li>
+            <li><a href="">jarallax</a></li>
+            <li><a href="">responsiveslides.js</a></li>
+            <li><a href="">Vue.js</a></li>
+          </ul>
+        </div>
     </div>
+
+
   </div>
 
 
-<script src="js/vue.js" charset="utf-8"></script>
 <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
-<script src="js/ResponsiveSlides/responsiveslides.js" charset="utf-8"></script>
 <script src="js/jarallax/jarallax.js" charset="utf-8"></script>
-<script src="js/main.js" charset="utf-8"></script>
+<script src="js/main_1.js" charset="utf-8"></script>
+<script type="text/javascript">
+$('.jarallax').jarallax({
+  speed: 0.5,
+  imgHeight: 768,
+  imgWidth: '100%',
+});
+</script>
 </body>
 </html>
