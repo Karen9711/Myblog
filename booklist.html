@@ -7,13 +7,31 @@
   <title>Document</title>
 </head>
 <body>
+  <!--简单js连接数据库  简单ajax异步请求  简单vue应用-->
   <div class="wrap">
     <div class="leftNav">
 
     </div>
+<!------------------------------------------------------------->
     <div class="content">
+      <div id="booklist">
+        <form action="">
+          <input type="text" name="" id="" v-model="book">
+          <button @click.prevent="onClick">add {{book}} to your book list</button>
+        </form>
+        <ul v-for="book in booklist" class='booklist'>
+          <li>{{book}}</li>
+        </ul>
+      </div>
+      <!---------------------------------->
+      <div id="comment">
 
+      </div>
     </div>
   </div>
+
+<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="js/vue.js" charset="utf-8"></script>
+<script src="js/booklistJS.js" charset="utf-8"></script>
 </body>
 </html>
