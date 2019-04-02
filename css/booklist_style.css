@@ -1,0 +1,114 @@
+body{
+  --textColor:#7C6354;
+}
+.wrap .content .col-3
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .content .col-3 .subWrap
+{
+  height: 80%;
+  background-color: rgba(230, 217, 153, 0.4);
+  /* border-radius: 1.5vw; */
+  box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+  position: relative;
+}
+@media screen and (min-width:750px) {
+  .wrap .content
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* background-color:#333; */
+  }
+  .wrap .content .col-3
+  {
+    width: 33.3%;
+    height: 100vh;
+  }
+  .wrap .content .col-3 .subWrap
+  {
+    width: 75%;
+  }
+}
+@media screen and (max-width:751px) {
+  .wrap .content
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color:#333; */
+  }
+  .wrap .content .col-3
+  {
+    width: 100%;
+    height: 100vh;
+  }
+  .wrap .content .col-3 .subWrap
+  {
+    width: 60%;
+  }
+}
+
+.wrap .content .col-3:nth-child(1)
+{
+  background-color: #EBF5DF;
+}
+.wrap .content .col-3:nth-child(2)
+{
+  background-color: #BAD4AA;
+}
+.wrap .content .col-3:nth-child(3)
+{
+  background-color: #D4D4AA;
+}
+
+.wrap .content .col-3 .subWrap .title
+{
+  text-align: center;
+  color:var(--textColor);
+  /* background-color: rgba(193, 160, 116, .6); */
+}
+.wrap .content .col-3 .subWrap ul.list
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+}
+.wrap .content .col-3 .subWrap li.item
+{
+  font-size: 18px;
+  line-height: 2em;
+  color:var(--textColor);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(193, 160, 116, .6);
+  border-top:0px;
+}
+.wrap .content .col-3 .subWrap .new
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.wrap .content .col-3 .subWrap .new input
+{
+  display: inline-block;
+  width: 78%;
+  height: 2em;
+  border: 0;
+  padding: 0;
+}
+.wrap .content .col-3 .subWrap .new button
+{
+  display: inline-block;
+  width: 22%;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
