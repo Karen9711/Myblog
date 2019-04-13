@@ -4,22 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>我的书单</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/booklist_1.css">
 </head>
 <body>
-  <div class="wantToRead"><!--想要读的书-->
+  <div class="my_nav">
+    <div class="container container-small clearfix">
+      <ul class="nav nav-tabs nav-justified navbar-static-top">
+        <li role="presentation"><a href="../index.html">首页</a></li>
+        <li role="presentation"><a :class="{active:isActive}" @click.prevent="clicked()" id="have_read_link" href="">已读过的书</a></li>
 
-  </div>
-  <div class="reading"><!--正在读的书-->
+        <li role="presentation"><a :class="{active:isActive}" @click.prevent="clicked()" id="reading_book_link" href="">正在读的书</a></li>
 
-  </div>
-  <div class="done"><!--已经读完的书-->
-    <ul id='book_done'>
-      <li v-for="book in bookDone">《{{book}}》</li>
-    </ul>
+        <li role="presentation"><a :class="{active:isActive}" @click.prevent="clicked()" id="gonna_read_link" href="">想要读的书</a></li>
+      </ul>
+    </div>
   </div>
 
+  <div class="content">
+    <div class="container-small">
+      <div class="list clearfix" :class="toggle?show:hidden" id="have_read">
+        <ul class="list-group booklist">
+          <li class="list-group-item item clearfix" role="input_item">
+            <div class="input-group input_box">
+              <input type="text" class="form-control" placeholder="输入书名" aria-describedby="basic-addon2" v-model="bookname">
+              <span class="input-group-addon" id="basic-addon2"><a href="" @click.prevent="addBook()">添加</a></span>
+            </div>
+          </li>
+
+          <li v-for='book in booklist' class="list-group-item item clearfix">
+            {{book}}
+            <button type="button" class="btn btn-default btn-small remove_btn"  @click.prevent="deleteBook">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
+          </li>
+
+
+
+        </ul>
+      </div>
+
+      <div class="list clearfix" :class="toggle?show:hidden" id="reading_book">
+        <ul class="list-group booklist">
+          <li class="list-group-item item clearfix" role="input_item">
+            <div class="input-group input_box">
+              <input type="text" class="form-control" placeholder="输入书名" aria-describedby="basic-addon2" v-model="bookname">
+              <span class="input-group-addon" id="basic-addon2"><a href="" @click.prevent="addBook()">添加</a></span>
+            </div>
+          </li>
+
+          <li v-for='book in booklist' class="list-group-item item clearfix">
+            {{book}}
+            <button type="button" class="btn btn-default btn-small remove_btn"  @click.prevent="deleteBook">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list clearfix" :class="toggle?show:hidden" id="gonna_read">
+        <ul class="list-group booklist">
+
+          <li class="list-group-item item clearfix" role="input_item">
+            <div class="input-group input_box">
+              <input type="text" class="form-control" placeholder="输入书名" aria-describedby="basic-addon2" v-model="bookname">
+              <span class="input-group-addon" id="basic-addon2"><a href="" @click.prevent="addBook()">添加</a></span>
+            </div>
+          </li>
+
+          <li v-for='book in booklist' class="list-group-item item clearfix">
+            {{book}}
+            <button type="button" class="btn btn-default btn-small remove_btn"  @click.prevent="deleteBook">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="../js/vue.js" charset="utf-8"></script>
-  <script src="../js/category.js" charset="utf-8"></script>
+  <script src="../js/booklist-js.js" charset="utf-8"></script>
 </body>
 </html>
