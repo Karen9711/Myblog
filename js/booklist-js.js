@@ -1,3 +1,4 @@
+
 //已读
 var have_read_block = new Vue({
   el:'#have_read',
@@ -11,7 +12,9 @@ var have_read_block = new Vue({
   },
   methods:{
     addBook:function(){
-      this.booklist.push(this.bookname);
+      if(this.bookname!=""){
+        this.booklist.push(this.bookname);
+      }
     },
     deleteBook:function(e){
       // console.log(e);
@@ -53,7 +56,9 @@ var reading_book_block = new Vue({
   },
   methods:{
     addBook:function(){
-    this.booklist.push(this.bookname);
+      if(this.bookname!=""){
+        this.booklist.push(this.bookname);
+      }
     },
 
     deleteBook:function(e){
@@ -96,7 +101,9 @@ var gonna_read_block = new Vue({
   },
   methods:{
     addBook:function(){
-    this.booklist.push(this.bookname);
+      if(this.bookname!=""){
+        this.booklist.push(this.bookname);
+      }
     },
 
     deleteBook:function(e){
