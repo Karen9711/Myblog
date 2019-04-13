@@ -1,6 +1,6 @@
 body
 {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .content{
@@ -17,14 +17,27 @@ body
   justify-content: center;
   align-items: center;
 }
-.list
-{
-  width: 65%;
-  height: 80%;
-  background: rgba(0, 0, 0, 0.5);
-  overflow-y: scroll;
-  position: relative;
+@media screen and (max-width:550px) {
+  .list
+  {
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    position: relative;
+  }
 }
+@media screen and (min-width:550px) {
+  .list
+  {
+    width: 65%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    position: relative;
+  }
+}
+
 
 .item .remove_btn
 {
