@@ -2,7 +2,8 @@
   "ecmaVersion": 6,
   "libs": [
     "jquery",
-    "browser"
+    "browser",
+    "chai"
   ],
   "loadEagerly": [],
   "dontLoad": [
@@ -27,6 +28,10 @@
       "paths": "",
       "override": ""
     },
-    "angular": {}
+    "angular": {},
+    "node_resolve": {},
+    "complete_strings": {
+      "maxLength": 15
+    }
   }
 }
