@@ -1,0 +1,33 @@
+body
+{
+  overflow: hidden;
+}
+
+.content{
+  background-color: rgb(205, 163, 152);
+  height: 100vh;
+}
+.content .container-small
+{
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list
+{
+  width: 65%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  position: relative;
+}
+
+.item .remove_btn
+{
+  float:right;
+  background-color:
+}
