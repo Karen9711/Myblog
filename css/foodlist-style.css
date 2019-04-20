@@ -17,3 +17,24 @@ button.addFood
 {
   display: block;
 }
+
+#back
+{
+  position:fixed;
+  right: 0;
+  bottom: 10%;
+  height:3em;
+  width: 6em;
+  text-align:center;
+  background-color: rgb(255, 255, 255);
+}
+#back a
+{
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
