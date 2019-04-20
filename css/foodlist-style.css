@@ -1,0 +1,19 @@
+[c-cloak]
+{
+  display: none;
+}
+#calendar
+{
+  background-color: rgba(223, 131, 8, 0.54);
+  height: 100vh;
+}
+td.day
+{
+   height:16vh;
+   background: rgb(249, 249, 249);
+}
+
+button.addFood
+{
+  display: block;
+}
